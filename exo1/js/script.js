@@ -11,4 +11,3 @@ let year = today.getFullYear()
 let age = year - anneeNaissance
 console.log(age)
 document.body.innerHTML += "<h3>" + " Vous avez "+ age + " ans" + "</h3>"
-
