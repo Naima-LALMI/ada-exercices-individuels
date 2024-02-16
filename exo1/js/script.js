@@ -5,7 +5,7 @@ function askName (){
     let msg= "👋 Bonjour " +  surname
     //console.log(msg)
     //Affichage du message 'msg' dans html
-    document.body.innerHTML +=  "<h2>" +  msg + "</h2>"                                
+    document.body.innerHTML +=  "<h2> "+  msg + "</h2>"                                
 }
 
 function askBirthYear(){
@@ -15,14 +15,12 @@ function askBirthYear(){
     let month = today.getMonth()+1
     let year = today.getFullYear()
     let age = year - anneeNaissance 
-    let mois = month - moisNaissance
-    if (moisNaissance<=month){
+    let mois = moisNaissance - month
+    if (moisNaissance>month){
         age--
-    }else {
-        age++
-    }
-  console.log(today)
-    document.body.innerHTML += "<h3>" + " Vous avez " + age  + "ans" + mois + "mois" + "</h3>"
+     }
+//  console.log(today)
+    document.body.innerHTML += "<h3>" + " Vous avez " + age  + "ans "  + "</h3>"
 }
 
 //Appel la fonction askName
